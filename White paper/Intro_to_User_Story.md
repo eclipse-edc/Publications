@@ -6,17 +6,17 @@ Francesca is the newly appointed Sustainability Program Manager at Italian Ficti
 
 To do so, Francesca needs data. Lots of data. Most of FCC’s suppliers will not be able to give her a per-item CO2 number, so she will need data going all the way back to source materials. For example, to calculate the CO2 footprint for FCC’s popular dry-aged beef prime rib, she will need
 
-•	The lifetime amount of water consumed by the cow
-•	The cow’s age
-•	The cow’s weight
-•	The weight of the piece of prime rib steak
-•	The lifetime amount of food consumed by the cow
-•	The type of food fed to the cow
-•	The annual energy usage of the rancher
-•	The energy mix used by the rancher
-•	The animal food supplier (its entire data to calculate the CO2 footprint of the feed)
-•	The entire logistics chain (its entire data to calculate the CO2 footprint of logistics)
-•	And so on…
+* The lifetime amount of water consumed by the cow
+* The cow’s age
+* The cow’s weight
+* The weight of the piece of prime rib steak
+* The lifetime amount of food consumed by the cow
+* The type of food fed to the cow
+* The annual energy usage of the rancher
+* The energy mix used by the rancher
+* The animal food supplier (its entire data to calculate the CO2 footprint of the feed)
+* The entire logistics chain (its entire data to calculate the CO2 footprint of logistics)
+* And so on…
 
 The above data is, of course, by no means exhaustive. And that’s just for one store item!
 
@@ -38,7 +38,7 @@ While Francesca is aware that the pilot with Rancho Relaxo will initially be of 
 
 After some discussion, Francesca, André, and Carlos decide on the following high-level requirements for their dataspace:
 
-•	The dataspace must be infrastructure-agnostic. No matter on what environment each participant in the space runs, all should be able to join.
-•	There must be some sort of digital identity management. This would ideally be decentralized and based on trusted certification from one or many third-party certification providers. Each participant must be able to independently verify the identity of all other participants.
-•	There must be a decentralized catalog where all participants can look up all data offered specifically to them by other participants in the space.
-•	There must be some way of making sure that agreed-upon usage policies for shared data is enforced automatically.
+* The dataspace must be infrastructure-agnostic. No matter on what environment each participant in the space runs, all should be able to join.
+* There must be some sort of digital identity management. This would ideally be decentralized and based on trusted certification from one or many third-party certification providers. Each participant must be able to independently verify the identity of all other participants.
+* There must be a decentralized catalog where all participants can look up all data offered specifically to them by other participants in the space.
+* There must be some way of making sure that agreed-upon usage policies for shared data is enforced automatically.
