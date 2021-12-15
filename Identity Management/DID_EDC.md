@@ -24,7 +24,7 @@ Decentralized Identifiers (DIDs) are globally unique identifiers that can be cre
 
 A DID is a simple three-part string:
 
-![DID three-part string](/images/parts-of-a-did-2.svg)
+![DID three-part string](images/parts-of-a-did-2.svg)
 
 (Source: https://www.w3.org/TR/did-core/)
 
@@ -58,7 +58,7 @@ If another entity supplies a verifiable credential that was signed by the issuin
 
 Verifiable Credentials are a W3C Standard. A verifiable credential in essence is a claim that an entity (the **holder** of the credential) makes about itself, which another entity (the **issuer** of the credential) bestowed upon that holder, and that a third entity wants to check (the **verifier**).
 
-![verifiable credentials ecosystem](/images/ecosystem-2.svg)
+![verifiable credentials ecosystem](images/ecosystem-2.svg)
 
  (Source: https://www.w3.org/TR/vc-data-model/)
 
@@ -72,7 +72,7 @@ The holder of verifiable credentials as described above needs some way to store 
 
 Taking the driver’s license example from above, an identity hub fulfills the role of the wallet of the driver, where the license is kept (the concept of digital wallets is also widely known today in the cryptocurrency world to securely store one’s digital assets). But an identity hub provides more than just storage of verifiable credentials.
 
-![identity hub](/images/topology-2.svg)
+![identity hub](images/topology-2.svg)
 
 (Source: https://identity.foundation/identity-hub/spec/)
 
@@ -127,7 +127,7 @@ The Eclipse Dataspace Connector implements decentralized identifiers and uses DI
 
 The identification verification process looks like this (both “Participant” and “Provider” are participants in a dataspace):
 
-![EDC DID workflow](/images/did-edc.png)
+![EDC DID workflow](images/did-edc.png)
 
 The two entities iterate through the following steps:
 1.  The participant EDC sends its DID to the provider.
