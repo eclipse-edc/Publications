@@ -32,7 +32,7 @@ Francesca and André approach some of the suppliers both _FFC_ and _MOF_ have re
 
 During initial discussions, more and more potential members for _Cibus_ become obvious, such as the logistics companies who transport not only finished products for _FFC_ and _MOF_, but also the animal feed from various suppliers to _SuperCows_. Also, regulatory agencies might need access to the CO2 (and other) data, non-profit organizations in the environmental protection arena might be able to use data from _Cibus_ directly to certify specific standards adhered to by its members, and even media outlets might want to access data for public reporting. Which would mean that _Cibus_ itself become an active participant in the dataspace to – as a collective good for its members – collate, process, and provide data to members as well as external agencies.
 
-![Dataspace Overview](images/dataspace_overview.png)
+![Dataspace Overview](images/dataspace_overview.pngd)
 
 To make all these potential future scenarios possible, the members of _Cibus_ decide on some basic requirements for their dataspace.
 
