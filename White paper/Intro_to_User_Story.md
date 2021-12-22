@@ -1,3 +1,5 @@
+> Disclaimer: The example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious. No association with any real company, organization, product, domain name, e-mail address, logo, person, places, or events is intended or should be inferred.
+
 # Introduction to User Story
 
 Meet Francesca.
