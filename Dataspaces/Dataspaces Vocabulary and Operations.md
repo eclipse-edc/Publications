@@ -148,4 +148,4 @@ Examples:
     - The consuming and providing **Connectors** jointly orchestrate the transfer of data associated with the **Data Asset**
     - Both **Connectors** record an audit history of the transaction
 
-![Mental Model of Data Transfer in a Dataspace](/images/Dataspaces_mental_model.png "Dataspacs Mental Model")
+![Mental Model of Data Transfer in a Dataspace](/images/Dataspaces_mental_model.png "Dataspaces Mental Model")
