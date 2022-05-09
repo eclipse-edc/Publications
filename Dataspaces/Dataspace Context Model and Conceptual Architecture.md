@@ -6,13 +6,13 @@ This document provides an overview of a _context model_ for a dataspace. A conte
 
 All dataspaces can be expressed by the following context model:
 
-![](images\Figure_1_Essentials.png)
+![](./images/Figure_1_Essentials.png)
 
 **Figure 1: The essentials of a dataspace**
 
 Participant agents are software systems that perform a specific operation or role in a dataspace. The following illustrates the different types of participant agents that may exist in a dataspace:
 
-![](images\Figure_2_ParticipantAgents.png)
+![](./images/Figure_2_ParticipantAgents.png)
 
 **Figure 2: Participant Agent types**
 
@@ -34,7 +34,7 @@ There is, however, at least one _Identity Provider_ associated with a dataspace 
 
 An identity provider may be centralized, distributed, or a combination of the two:
 
-![](images\Figure_3_Identity_and_Trust.png)
+![](./images/Figure_3_Identity_and_Trust.png)
 
 **Figure 3: Identity and trust in a dataspace**
 
@@ -46,7 +46,7 @@ There are two types of _Catalog Participant Agent_: The Federated Catalog Node (
 
 The FCC is a participant agent that queries (or crawls) other FCNs in a dataspace. It may be required to present verifiable credentials used to determine which assets are visible to it. A naïve implementation of an FCC could perform real-time crawling in response to a query made by an end-user. This would not scale for dataspaces of any significant size. The EDC FCC, in contrast, performs periodic crawling operations of other FCNs and updates a local, query-able cache. The following diagram illustrates the relationship between the FCC and FCN:
 
-![](images\Figure_4_FCN_FCC.png)
+![](./images/Figure_4_FCN_FCC.png)
 
 **Figure 4: The FCC and FCN in a dataspace**
 
@@ -54,7 +54,7 @@ The FCC is a participant agent that queries (or crawls) other FCNs in a dataspac
 
 A Connector is a specialized participant agent that functions as the asset sharing infrastructure in a dataspace. Connectors may share diverse assets such as data streams, API access, big data, or compute-to-data services. They may support push data transfers, pull data transfers, event streaming, pub/sub notifications, or a variety of other transfer topologies. The following outlines the role of the connector in a dataspace:
 
-![](images\Figure_5_Connectors.png)
+![](./images/Figure_5_Connectors.png)
 
 **Figure 5: Connectors in a dataspace**
 
@@ -64,7 +64,7 @@ Asset sharing is performed in two distinct steps: _contract negotiation_ and _da
 
 TBD
 
-![](images\Figure_6_ContractNegotiation.png)
+![](./images/Figure_6_ContractNegotiation.png)
 
 **Figure 6: Contract negotiation**
 
@@ -72,6 +72,6 @@ TBD
 
 TBD
 
-![](images\Figure_7_DataTransferProcess.png)
+![](./images/Figure_7_DataTransferProcess.png)
 
 **Figure 7: Data transfer process**
