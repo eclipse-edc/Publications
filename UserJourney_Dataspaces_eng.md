@@ -57,7 +57,7 @@ Alex, who is the responsible project manager, identifies all stakeholders and de
 
 Since these parameters are not given figures but based on various calculations, the project manager visualizes which data sets are needed and from whom.
 
-![](./1_product_userstory for dataspaces - Precondition.jpg)
+![](./user_journey_images/1_Precondition.jpg)
 
 It quickly becomes apparent that this calculation, even if it is just for a single food item, involves many different data sources and data suppliers. Even if Alex collects all the necessary one-time data, she would still need help from external parties to do the calculation.
 
@@ -85,13 +85,13 @@ Alex identifies the following new requirements:
 
 - First and foremost, there must be no manual steps required for this process because that would not be feasible. Among other things, this means that the values determined must be send automatically to the packaging producer so to print the calculated carbon footprint on the product labels. Therefore, the data stream must flow in both directions: to and from the data processor. If we think about this in the case of Gouda cheese, it would look like this:
 
-![](RackMultipart20220528-1-cdydjn_html_3a6ae73f3516520f.jpg)
+![](./user_journey_images/2_Members.jpg)
 
 - Besides that, the data suppliers also have a requirement that they must be able to define which data set may be shared, with whom (access policy), and under what conditions (usage policy). After all, they are dealing with confidential production data that can cause considerable damage in the wrong hands. If we think about this in the case of Gouda cheese, usage policies and access policies need to be included in multiple places:
 
 ![](RackMultipart20220528-1-cdydjn_html_9acfcda0985558b6.jpg)
 
-- I ![](RackMultipart20220528-1-cdydjn_html_3c421ba14203275c.jpg) n addition, the exchange of data has to be automatic and only possible if specific conditions are fulfilled, i.e. only if the data recipient has accepted the policies of the data provider.
+- In addition, the exchange of data has to be automatic and only possible if specific conditions are fulfilled, i.e. only if the data recipient has accepted the policies of the data provider.
 
 ![](RackMultipart20220528-1-cdydjn_html_440c62d58aa1e536.jpg)
 
