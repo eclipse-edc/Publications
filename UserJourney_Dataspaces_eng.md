@@ -1,7 +1,5 @@
-##
- User Journey – Data Spaces
+## User Journey: Data Spaces
 
-##
 ### As of Q2/2022
 
 Purpose of the document:
@@ -10,13 +8,13 @@ This document aims to demonstrate the necessity and function of data spaces.
 
 # Table of contents
 
-_**[Abstract 2](#_Toc103433723)**_
+_**Abstract 2**_
 
-_**[Introduction 3](#_Toc103433724)**_
+_**Introduction**_
 
-_**[User Story – Part I 5](#_Toc103433725)**_
+_**User Story – Part I**_
 
-_**[User Story – Part II 12](#_Toc103433726)**_
+_**User Story – Part II**_
 
 Authors:
 
@@ -59,7 +57,7 @@ Alex, who is the responsible project manager, identifies all stakeholders and de
 
 Since these parameters are not given figures but based on various calculations, the project manager visualizes which data sets are needed and from whom.
 
-![](RackMultipart20220528-1-cdydjn_html_af00fedeb40da400.jpg)
+![](./1_product_userstory for dataspaces - Precondition.jpg)
 
 It quickly becomes apparent that this calculation, even if it is just for a single food item, involves many different data sources and data suppliers. Even if Alex collects all the necessary one-time data, she would still need help from external parties to do the calculation.
 
