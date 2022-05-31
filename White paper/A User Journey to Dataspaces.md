@@ -1,10 +1,10 @@
-## User Journey: Data Spaces
+## A User Journey to Data Spaces
 
 ### As of Q2/2022
 
 Purpose of the document:
 
-This document aims to demonstrate the necessity and function of data spaces.
+This document aims to demonstrate the necessity and functions of data spaces.
 
 # Table of contents
 
