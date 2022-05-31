@@ -8,7 +8,7 @@ This document aims to demonstrate the necessity and function of data spaces.
 
 # Table of contents
 
-_**Abstract 2**_
+_**Abstract**_
 
 _**Introduction**_
 
@@ -28,7 +28,9 @@ The present document was published under an [Apache 2.0 license](mailto:https://
 
 # Abstract
 
-Every day, billions of new data are generated, measured and managed by the humankind: environment data, health data, social media data etc. When it comes to data use and data sharing, however, corporate entities quickly reach their limits. The presented example shows how organizations can actually benefit from these limits by creating new data-driven business cases.
+Every day, billions of new data are generated, measured and managed by the humankind: environment data, health data, social media data etc. 
+ 
+When it comes to data use and data sharing, however, corporate entities quickly reach their limits. The presented example shows how organizations can actually benefit from these limits by creating new data-driven business cases.
 
 Since our world is increasingly becoming data-driven, and we make products out of data, it is essential to also provide a corresponding technological environment. The related tools mentioned in this document, such as data spaces or connectors, are the building blocks that can be applied to create, use and participate in a data ecosystem. In this process, particularly high value is placed on topics of sovereignty, trust and interconnectedness of data.
 
@@ -53,9 +55,9 @@ Alex, who is the responsible project manager, identifies all stakeholders and de
 - CO2 emissions for the milk needed for a 350g package of Gouda cheese
 - CO2 emissions of cheese production
 - CO2 emissions for packaging
-- CO2 emissions for storage and logistics to the grocery store
+- CO2 emissions for warehouse and logistics to the grocery store
 
-Since these parameters are not given figures but based on various calculations, the project manager visualizes which data sets are needed and from whom.
+Since these parameters are not given figures but based on various calculations, the project manager visualizes which data sets are needed and from whom:
 
 ![](./user_journey_images/1_Precondition.jpg)
 
@@ -65,9 +67,7 @@ So she rolls up her sleeves, contacts her suppliers and gets everyone on board. 
 
 The organic farm and the organic cheese producer approve of transparency and awareness raising and, moreover, hope to achieve a long-term increase in purchase of their products due to better sales figures. The data savvy logistics partner is supportive of this goal, and also sees the potential to optimize logistics and reduce CO2 emissions (and costs) based on the collected data. After all, the data sharing does not have to be a one-way street in the long run.
 
-While data suppliers are determining all the necessary figures, Alex is looking for an adequate data processor and data intermediary
-# 1
-. What she needs is a service company which can prepare data from different sources for further processing, in terms of both content and quality, and also do the required calculations like aggregation, anonymization and analysis.
+While data suppliers are determining all the necessary figures, Alex is looking for an adequate data processor and data intermediary. (A data intermediary is an organization that processes data on behalf of another organization. A data intermediary works to manage data in a specific way and ensure a certain degree of trust with regard to the use of data.) What she needs is a service company which can prepare data from different sources for further processing, in terms of both content and quality, and also do the required calculations like aggregation, anonymization and analysis.
 
 Since this is a proof of concept, and no established data exchange contracts are available an NDA is drafted and contractual agreements for sharing data in this project are arranged. Alex ensures that there is a digital storage location to save the data. Due to the uniqueness of the project, all stakeholders agree to save their data in the cloud storage run by the organic grocery store operator, where the data processing company can also access the data from the cloud storage.
 
@@ -89,39 +89,42 @@ Alex identifies the following new requirements:
 
 - Besides that, the data suppliers also have a requirement that they must be able to define which data set may be shared, with whom (access policy), and under what conditions (usage policy). After all, they are dealing with confidential production data that can cause considerable damage in the wrong hands. If we think about this in the case of Gouda cheese, usage policies and access policies need to be included in multiple places:
 
-![](RackMultipart20220528-1-cdydjn_html_9acfcda0985558b6.jpg)
+![](./user_journey_images/3_Members_Policies.jpg)
 
 - In addition, the exchange of data has to be automatic and only possible if specific conditions are fulfilled, i.e. only if the data recipient has accepted the policies of the data provider.
 
-![](RackMultipart20220528-1-cdydjn_html_440c62d58aa1e536.jpg)
+![](./user_journey_images/4_Policies_Agreed.jpg)
 
 - Unfortunately, in our case all of this cannot be yet fully automated due to the way the data was collected in the first place, i.e. by uploading them to the data drive of the organic grocery store operator. At the time of delivery of data to the cloud storage of the organic grocery store operator, the respective data supplier had no way of controlling whether the data will be used only for the agreed purpose, or who could view or access the data in the cloud storage. However, every data supplier wants to ensure that they can leverage control and make an explicit decision as to who may receive, view or process their data (data autonomy issue). For the data supplier to be able to do so, conditions of data exchange must be clearly defined and negotiated before sending the data, as well as continuously monitored and recorded during the exchange of data.
 
 For the proof of concept, however, data was delivered directly to the cloud storage of the organic grocery store operator. This procedure was acceptable for everyone in this case, since all the parties agreed thereto, it was a small and clearly defined circle of participants, the one-time data transfer was not business-critical and there was a general mutual trust among the participating parties. This resulted in the following picture:
 
-![](RackMultipart20220528-1-cdydjn_html_63c3c1b110443a77.jpg)
+![](./user_journey_images/5_Sovereignity_Loss.jpg)
 
 In order to create a data-based product, such as a carbon footprint label for every packaged product, as well as to produce carbon footprint labels on a large scale for all private label products of the organic grocery store with participants who do not know each other, a completely different type of architecture and data transfer is necessary: a digital room in which business partners can find each other, access data descriptions (=metadata) and agree on conditions for data exchange (=policies) before any actual data exchange takes place. The mentioned digital room is known as a data space:
 
-![](RackMultipart20220528-1-cdydjn_html_d0f5a4a566b86fde.jpg)
+![](./user_journey_images/6_What_is_a_Data_Space.jpg)
 
 Participants in a data space can access all shared data descriptions (metadata), but not yet the contents of data files! This is comparable to a book cover providing the title, the author and a short description (= metadata), and a price tag stating the conditions for access to the contents (= usage and access policies). In our example, the metadata set could be titled &quot;Milk production per cow per year&quot;, provided by &quot;farmer XY&quot;, offered under the usage condition (usage policy) that &quot;data my only be stored in the EU&quot; and access condition (access policy) &quot;for members of the organic grocery stores club&quot;. If an interested party complies with these conditions, the technological basis is established to enable the data transfer (i.e. connectors exchange data between the two partners).
 
-![](RackMultipart20220528-1-cdydjn_html_2c0f451c038a0a8f.jpg)
+![](./user_journey_images/7_Data_Transfer.jpg)
 
 If we look at this on a superficial technological level, it means that the participants keep their respective data and data sources and only grant other participants access to the respective metadata and policies. Only after the policies are complied with, the data transfer takes place by means of connectors. A connector is thus a technical building block that is linked to a data source on one side of the exchange and can connect with other connectors under the defined conditions on the other side. These connectors are not merely adapters; they also ensure that the policies are being complied with. For example, a connector can carry the information that the data source linked to it is located in the EU; otherwise, it is not possible to agree to the policies which govern the data transfer, and no data transfer can take place. (Data Exchange Service)
 
-![](RackMultipart20220528-1-cdydjn_html_d709c2e84cb89141.jpg)
+![](./user_journey_images/8_Source_Connectors_Connection.jpg)
 
 **Summary:**
 
 The need for data spaces quickly becomes apparent when it comes to sharing data in a trusted environment with partners outside of your own organization. Our increasingly data-driven world creates products from data, therefore it is essential to also create a suitable technological environment. Neutral, decentralized digital spaces (data spaces) are not controlled by one of the parties but instead provide a fair, cooperative playing field for all participants, enabling them to exchange metadata and agree on access and usage policies. From a technological point of view, connectors form the basis for such a data exchange.
+ 
+  
+   
 
 # User Story – Part II
 
 Alex managed to bring together all the suppliers of food items in the private label product line. The resulting map is very remarkable for this use case alone! Numerous suppliers and logistics partners deliver data under their own terms and conditions, and with the aim to calculate the carbon footprint of an item and provide it on the product packaging. Not only is data supplied from individual data sources, but it&#39;s also processed by a specialized company for the purpose of data analysis and then fed back so that the resulting values can be printed on each product label. Due to the large number of participants, manual administration of the data transfers is no longer feasible. Even a simplified picture clearly shows how many connections need to be established under the defined conditions:
 
-![](RackMultipart20220528-1-cdydjn_html_573ff7a2edb3aca3.jpg)
+![](./user_journey_images/9_Data_Space_all_members.jpg)
 
 Moreover, the project is not only successful within the organization. The implementation of such a data-based product, which increases transparency in terms of sustainability and involves so many different stakeholders, also attracts media attention. Various magazines, blogs and e-journals refer to the use case, and the topic is increasingly gaining momentum. Within the shortest time this is reflected in the sales figures, as the eco-conscious consumers of the organic grocery store appreciate the transparency.
 
@@ -164,7 +167,3 @@ It is all about sovereignty, autonomy, trust and innovation in decentralized dat
 All of it, and much more, is already feasible with technology available today.
 
 All we need to do is - do it!
-
-[1](#sdfootnote1anc) A data intermediary is an organization that processes data on behalf of another organization. A data intermediary works to manage data in a specific way and ensure a certain degree of trust with regard to the use of data.
-
-3
