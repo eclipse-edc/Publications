@@ -4,9 +4,9 @@
 
 ## Purpose and Target Audience
 
-This document assumes a basic understanding of the concept of International Dataspaces and some knowledge about the Eclipse Dataspace Connector within that context. Also, basic acquaintance with the mechanisms of public key infrastructures (PKI) and the domain name service (DNS) is required.
+This document assumes a basic understanding of the concept of International Dataspaces and some knowledge about the Eclipse Dataspace Components within that context. Also, basic acquaintance with the mechanisms of public key infrastructures (PKI) and the domain name service (DNS) is required.
 
-Its purpose is to provide an overview of what Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs) are, why dataspaces need them, and how the Eclipse Dataspace Connector (EDC) leverages DIDs and VCs to implement decentralized identity management.
+Its purpose is to provide an overview of what Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs) are, why dataspaces need them, and how the Eclipse Dataspace Components (EDC) leverages DIDs and VCs to implement decentralized identity management.
 
 ## The Problem of Identity
 
@@ -107,8 +107,7 @@ Taking an example DID of *did:web:example.com*, the associated DID document woul
   "verificationMethod": [{
      "id": "did:web:example.com#owner",
      "type": "Secp256k1VerificationKey2018",
-     "owner": "did:web:example.com",
-     "ethereumAddress": "0xb9c5714089478a327f09197987f16f9e5d936e8a"
+     "owner": "did:web:example.com"
   }],
   "authentication": [
      "did:web:example.com#owner"
@@ -123,7 +122,7 @@ DID-Web is a very simple, but also practical solution. It avoids the complexity 
 
 # The EDC Solution
 
-The Eclipse Dataspace Connector implements decentralized identifiers and uses DID:Web as the default method. However, as the EDC is extensible with custom modules additional DID methods can be easily added. It even supports the replacement of decentralized identity with centralized identity providers if a dataspace should desire to do so.
+The Eclipse Dataspace Components implement decentralized identifiers and use DID:Web as the default method. However, as the EDC are extensible with custom modules additional DID methods can be easily added. It even supports the replacement of decentralized identity with centralized identity providers if a dataspace should desire to do so.
 
 The identification verification process looks like this (both “Participant” and “Provider” are participants in a dataspace):
 
